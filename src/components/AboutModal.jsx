@@ -34,7 +34,7 @@ export function AboutModal() {
       <Dialog
         open={open}
         handler={handleOpen}
-        className="bg-slate-900 mx-auto mt-6 h-[90vh] md:h-[80vh] w-[90vw] md:max-w-[80vw] xl:max-w-[70vw] shadow-xl rounded-xl "
+        className="bg-slate-900 mx-auto mt-6 h-[90vh] md:h-[80vh] w-[90vw] md:max-w-[80vw] xl:max-w-[70vw] shadow-xl rounded-xl"
       >
         <div className="flex justify-end p-2">
           <Button
@@ -112,23 +112,23 @@ export function AboutModal() {
               <ul className="flex max-w-[80%] mx-auto mt-4 justify-center gap-4">
                 <li className="flex flex-col gap-2 text-[#00ffff]">
                   <FaReact size={40} />
-                  <h1 className="text-center"> R </h1>
+                  <h1 className="text-center font-bold"> R </h1>
                 </li>
                 <li className="flex flex-col gap-2">
                   <SiNextdotjs size={40} />
-                  <h1 className="text-center"> N </h1>
+                  <h1 className="text-center font-bold"> N </h1>
                 </li>
                 <li className="flex flex-col gap-2">
                   <SiExpress size={40} />
-                  <h1 className="text-center"> E </h1>
+                  <h1 className="text-center font-bold"> E </h1>
                 </li>
                 <li className="flex flex-col gap-2 text-[#6fa660]">
                   <BiLogoNodejs size={40} />
-                  <h1 className="text-center"> N </h1>
+                  <h1 className="text-center font-bold"> N </h1>
                 </li>
                 <li className="flex flex-col gap-2 text-[#47A248]">
                   <DiMongodb size={40} />
-                  <h1 className="text-center"> M </h1>
+                  <h1 className="text-center font-bold"> M </h1>
                 </li>
               </ul>
             </div>

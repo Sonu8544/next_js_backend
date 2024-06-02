@@ -8,12 +8,10 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 import TypeWrite from "./Typewrite";
 import { AboutModal } from "./AboutModal";
-// import { TypewriterEffectSmoothDemo } from "../TypewriterEffectSmoothDemo";
-
 
 export default function HomeBanner() {
   return (
-    <section className="relative flex flex-col items-center justify-between py-4 lg:py-12 bg-[#0A0E32] mb-10 md:h-[98vh]">
+    <section className="relative flex flex-col items-center justify-between py-4 lg:py-12 bg-[#0A0E32] md:h-[98vh]">
       <Image
         src="/hero.svg"
         alt="Hero"

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 // import { FiSmile } from "react-icons/fi";
-import Image from 'next/image';
+import Image from "next/image";
 
 
 export default function ContactForm() {
@@ -71,7 +71,7 @@ export default function ContactForm() {
         <div className="mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8 lg:py-20">
           <div className="mb-4">
             <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-              <h2 className="constctTitle flex justify-center font-heading mb-4 font-bold tracking-tight text-gray-900 text-3xl sm:text-5xl">
+              <h2 className="flex justify-center font-heading mb-4 font-bold tracking-tight text-pink-500 text-xl md:text-3xl">
                 Get in Touch
               </h2>
             </div>
@@ -79,17 +79,17 @@ export default function ContactForm() {
           <div className="justify-center">
             <div className="grid md:grid-cols-2">
               {/* Image here */}
-              {/* <div className="imageSection max-w-full max-h-[200px] md:max-h-[400px]">
+              <div className="imageSection my-auto max-w-full max-h-[200px] md:max-h-[400px]">
                 <Image
-                  src="https://cdni.iconscout.com/illustration/premium/thumb/contact-us-3483604-2912020.png"
-                  alt=""
+                  src="/contact.webp"
+                  alt="contact image"
                   width={500}
                   height={500}
                   className="object-cover w-full h-full hover:scale-110 transition-transform duration-500"
                 />
-              </div> */}
+              </div>
               <div className="card h-fit max-w-6xl md:p-12 mt-[2rem]" id="form">
-                <p className="mb-4 contactSubTitle">Ready to Get Started?</p>
+                <p className="mb-4 text-sm font-bold text-blue-700">Ready to Get Started?</p>
                 <form id="contactForm" onSubmit={handleSubmit}>
                   <div className="mb-6">
                     <div className="mx-0 mb-1 sm:mb-4">
@@ -175,11 +175,10 @@ export default function ContactForm() {
                     )}
                     <button
                       type="submit"
-                      className={`w-full text-white px-6 py-3 font-xl rounded-md sm:mb-0 ${
-                        isButtonDisabled || error
+                      className={`w-full text-white px-6 py-3 font-xl rounded-md sm:mb-0 ${isButtonDisabled || error
                           ? "bg-gray-400 cursor-not-allowed"
                           : "bg-blue-800"
-                      }`}
+                        }`}
                       disabled={isButtonDisabled || error}
                     >
                       {isButtonDisabled ? "Please wait..." : "Send Message"}
